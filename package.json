@@ -1,13 +1,30 @@
 {
-  "name": "boilerplate-pioucord-esm",
-  "version": "0.0.0",
-  "description": "Boilerplate for Pioucord with ESM",
+  "name": "trusty-captcha",
+  "version": "1.0.0-beta.dev",
+  "description": "Trusty Captcha is a user-friendly Discord bot that effectively manage captcha systems and protects against malicious bot using its expanding database.",
   "main": "index.js",
-  "keywords": [],
-  "author": "Hecone",
-  "license": "ISC",
-  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/10hecone/trusty-captcha.git"
+  },
+  "keywords": [
+    "bot",
+    "pioucourd",
+    "discord",
+    "captcha",
+    "secure",
+    "database"
+  ],
+  "author": "10Hecone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/10hecone/trusty-captcha/issues"
+  },
+  "homepage": "https://github.com/10hecone/trusty-captcha#readme",
   "dependencies": {
-    "pioucord": "^1.1.4"
+    "pioucord": "^1.1.19"
   }
 }

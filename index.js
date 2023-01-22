@@ -4,13 +4,16 @@ import * as fs from 'node:fs';
 import config from './config.json' assert { type: 'json' };
 
 export const client = new Client({     
-	intents: ['Guilds', 'GuildMessages', 'MessageContent', 'GuildMembers'],
+	intents: ['Guilds', 'GuildMembers'],
 });
 
-['commands'].forEach(x => client[x] = new Map());
+for(const collection of ['commands']) {
+    client[collection] = new Map();
+};
 
 for (const handler of ['EventUtil', 'CommandUtil']) {
-    await import(`./utils/handlers/${handler}.js`).then(c => c.default(client, fs, config, func));
+    const handlerFile = await import(`./utils/handlers/${handler}.js`)
+    handlerFile.default(client, fs, config, func);
 };
 
 process.on('exit', code => {

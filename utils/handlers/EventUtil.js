@@ -4,6 +4,7 @@ export default async (client, fs, config, func) => {
             if(!evnFile.endsWith('.js')) continue;
 
             const event = await import(`../../client/events/${dir}/` + evnFile);
+            
             if (['name', 'execute', 'once'].some(key => event.default[key] === undefined)) return console.log(`Event: ${event.default.name} not loaded, missing field`);
             console.log(`Event: ${event.default.name} loaded!`);
 

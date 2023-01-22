@@ -4,11 +4,7 @@ export default {
     async execute(client, config, functions, interaction) {
         const { found, check } = {
              check(cmd) {
-                if (!cmd) return found()
-                if (cmd?.whitelistOnly === true) {
-                    if(!config.client.whitelistOnly.includes(interaction.member.user.id)) return functions.reply(interaction, {embeds: [{title: "Error", description: "You don't have the permission to use this command!"}]});
-                };
-                Object.assign(interaction, {createdTimestamp: Date.now()});
+                if (!cmd) return found();
                 cmd.runInteraction(client, interaction, functions, config);
             },
             found() {
