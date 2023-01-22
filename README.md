@@ -24,7 +24,7 @@ You can install it by inviting the bot to your Discord server or by downloading 
 
 ### Useful links
 
-[Invite the bot](https://hecone.online/trustycaptcha/invite)
+[Invite the bot](https://hecone.online/bot/trustycaptcha)
 
 [Source code on GitHub](https://github.com/10hecone/trusty-captcha/)
     
