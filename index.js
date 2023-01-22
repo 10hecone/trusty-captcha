@@ -1,7 +1,7 @@
 import { Client } from 'pioucord';
 import { func } from "./utils/functions.js";
 import * as fs from 'node:fs';
-import config from './config.json' assert { type: 'json' };
+import config from './config/config.json' assert { type: 'json' };
 
 export const client = new Client({     
 	intents: ['Guilds', 'GuildMembers'],
