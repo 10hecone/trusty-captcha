@@ -3,7 +3,7 @@
 A simple and effective Discord bot for managing captcha systems
 ### Commands
 
-    /captcha : manages the captcha system
+    /trusty : manages the captcha system
 
 ### Features
 
