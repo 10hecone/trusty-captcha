@@ -20,11 +20,13 @@
   ],
   "author": "10Hecone",
   "license": "MIT",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/10hecone/trusty-captcha/issues"
   },
   "homepage": "https://github.com/10hecone/trusty-captcha#readme",
   "dependencies": {
+    "better-sqlite3": "^8.0.1",
     "pioucord": "^1.1.19"
   }
 }

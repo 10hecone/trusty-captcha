@@ -4,6 +4,6 @@ export default {
     description: 'Managa captcha system!',
 
     runInteraction(client, interaction, functions) {
-        // ...
+        //
     },
 };
